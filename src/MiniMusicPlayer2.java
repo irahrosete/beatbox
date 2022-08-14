@@ -8,6 +8,11 @@ import static util.EventUtil.makeEvent;
 
 public class MiniMusicPlayer2 {
     public static void main(String[] args) {
+        MiniMusicPlayer2 mini = new MiniMusicPlayer2();
+        mini.go();
+    }
+
+    public void go() {
         try {
             Sequencer sequencer = MidiSystem.getSequencer();
             sequencer.open();
